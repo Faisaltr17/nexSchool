@@ -1,0 +1,1108 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #1e2221;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cc95;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #151C48;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #00c28e;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  top: 20px;
+}
+
+#header .header-container {
+  background: #fff;
+}
+
+#header.header-scrolled {
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  top: 0;
+}
+
+#header .logo {
+  overflow: hidden;
+  padding: 16px 30px 12px 30px;
+}
+
+#header .logo h1 {
+  font-size: 26px;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: -20px;
+  margin: -15px;
+  max-height: 100px;
+  
+}
+
+@media (max-width: 992px) {
+  #header {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    top: 0;
+    background: #151C48;
+  }
+  #header.header-scrolled, #header .header-container {
+    background: #151C48;
+  }
+  #header .logo {
+    padding-left: 0;
+  }
+  #header .logo h1 {
+    font-size: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.nama label{
+  float: left;
+  margin-left: -150px;
+  color: black;
+  cursor: pointer;
+}
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #36343a;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+  color: #151C48;
+}
+
+.navbar .getstarted {
+  background: #151C48;
+  padding: 15px 25px;
+  margin-left: 30px;
+  margin-right: 15px;
+  border-radius: 50px;
+  color: #fff;
+  line-height: 15px;
+}
+
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #00b383;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  background-color: #151C48;
+  color: white;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(29, 28, 31, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #36343a;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #151C48;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #151C48;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 90vh;
+  background: url(https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg) center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+#hero .container {
+  padding-top: 80px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #151C48;
+  border: 2px solid #151C48;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero .container {
+    padding-top: 60px;
+  }
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f6f7;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #151C48;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  background: #f6f6f7;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.clients img {
+  width: 40%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.clients img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#about .content h2 a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.about .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.about .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #151C48;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: #151C48;
+  padding: 40px 0 20px 0;
+  color: #fff;
+}
+
+.counts .counters span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 30px;
+  background: #151C48;
+  border-radius: 4px;
+  color: #fff;
+}
+.why-us .kotak{
+  margin-right: 50px;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #151C48;
+  background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.why-us .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #151C48;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.why-us .icon-boxes .icon-box:hover {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdn.pixabay.com/photo/2017/10/10/00/03/kids-2835430_1280.jpg") fixed center center;
+  background-size: cover;
+  padding: 100px 150px 100px 120px;
+}
+.cta img{
+  border-radius: 90%;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 0px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #151C48;
+  border: 2px solid #151C48;
+}
+
+/*--------------------------------------------------------------
+# sekolah
+--------------------------------------------------------------*/
+.sekolah .icon-box {
+  text-align: center;
+  padding: 70px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.10);
+
+}
+
+
+.sekolah .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  border: 1px solid #151C48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #151C48;
+}
+
+
+.sekolah .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.sekolah .icon-box h2 a {
+  color: #36343a;
+  transition: ease-in-out 0.3s;
+
+}
+.sekolah .icon-box a {
+  display: block;
+
+}
+
+.sekolah .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.sekolah .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+.sekolah .icon-box:hover  a {
+  color: #151C48;
+}
+
+.sekolah .icon-box:hover .icon {
+  color: #fff;
+  background: #151C48;
+}
+.sekolah img{
+  width: 200px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #151C48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #36343a;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #686470;
+}
+.contact p{
+  text-align: justify;
+  padding-right: -30px;
+}
+
+
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #fff;
+  height: 270px;
+  margin-top: -50px;
+}
+
+
+#fb{
+	width: 80px;
+	height: 80px;
+}
+
+#tw{
+	width: 100px;
+	height: 100px;
+	margin: 0px 5px 0px 10px;
+}
+#ig{
+	width: 80px;
+	height: 80px;
+	display: inherit;
+	margin-left: 6px;
+}
+
+.sosmed{
+	text-align: center;
+	background-color: #d7d5da;
+	padding-bottom: 5px;
+	border-top: 5px solid #000000;
+  
+}
+
+#lastfooter{
+  background-color: black;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: pink;
+  font-size: large;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+    
+}
+#lastfooter a{
+  color: #151C48;
+}
+
+
+#footer .footer-top h4 {
+  text-align: center;
+  margin-top:0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444444;
+  
+}
+
+/* LIST SEKOLAH */
+/*--------------------------------------------------------------
+# aktor
+--------------------------------------------------------------*/
+.aktor {
+  padding: 15px 0;
+  background: #f6f6f7;
+  margin-top: 130px;
+}
+
+.aktor h2 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  color:rgba(109, 71, 71, 0.829);
+}
+
+.aktor ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 40px;
+  color: #4f4c55;
+}
+.aktor ul li{
+  list-style: none;
+  float: right;
+  padding-top: 10px;
+}
+
+.aktor ol li + li {
+  padding-left: 10px;
+}
+
+.aktor ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #4f4c55;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .aktor .d-flex {
+    display: block !important;
+  }
+  .aktor ol {
+    display: block;
+  }
+  .aktor ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# lists
+--------------------------------------------------------------*/
+.lists{
+  background-color: #fff;
+}
+
+
+.lists .icon-box {
+  text-align: center;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.10);
+}
+
+.lists .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 30px;
+  color :rgba(109, 71, 71, 1) ;
+  transition: ease-in-out 0.3s;
+} 
+
+.lists .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.lists .icon-box:hover {
+  transition: all 0.1s;
+  box-shadow: 0px 0 25px 0 rgb(80, 65, 65);
+}
+
+.lists .icon-box h4:hover {
+  color: #151C48;
+}
+
+.lists .img-thumbnail{
+  width: 40%;
+  float: left;
+  margin-right: 20px;
+}
+.lists .btn{
+  margin: 70px 0px;
+
+}
+.lists .btn:hover {
+  background: #151C48;
+}
+
+/* AKHIR LIST SEKOLAH */
+
+/* AWAL VALIDASI */
+
+#index-datasekolah{
+	margin:100px 100px 50px;
+    padding:20px;
+    display: inline-flex;
+    margin-right: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+#index-datasekolah:hover {
+  transition: all 0.5s;
+  box-shadow: 0px 0 25px 0 rgb(80, 65, 65);
+}
+.datasekolah{
+	margin-left: 30px;
+  text-align: justify;
+}
+.datasekolah h3{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: -10px;
+}
+.datasekolah label{
+	font-size: 20px;
+}
+
+.datasekolah .cta-btn {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 0px;
+  border: 2px solid fff;
+  background: #151C48;
+  color: #fff;
+}
+
+.datasekolah .cta-btn:hover {
+  color: #fff;
+  background: #00b383;
+}
+/* AKHIR VALIDASI */
+
+.container-sekolah {
+  padding: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5px 15px;
+  gap: 20px;
+  position: relative;
+}
+#img-sekolah {
+  height: 90%;
+}
+#img-sekolah2 {
+  margin-top: 5em;
+  height: 60%;
+}
+.datasekolah tr td {
+  padding: 0.5em;
+}
+#index-datasekolah {
+  margin: 4em;
+  padding: 20px;
+  display: inline-flex;
+  margin-right: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+#index-datasekolah:hover {
+  transition: all 0.5s;
+  box-shadow: 0px 0 25px 0 rgb(80, 65, 65);
+}
+.datasekolah {
+  margin-left: 30px;
+  width: 300px;
+  height: 50px;
+  text-align: justify;
+}
+.datasekolah h3 {
+  text-align: left;
+  font-size: 16pt;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -10px;
+}
+.datasekolah label {
+  font-size: 20px;
+}
+
+.datasekolah .cta-btn {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 0px;
+  border: 2px solid fff;
+  background: #151C48;
+  color: #fff;
+}
+
+.datasekolah .cta-btn:hover {
+  color: #fff;
+  background: #00b383;
+}

@@ -1,0 +1,109 @@
+/*HALAMAN-SEKOLAH*/
+
+.halaman-sekolah{
+	margin: 4em 0em 4em 3em;
+}
+
+.biodata{
+	display: grid;
+	grid-template-columns: 25% auto;
+}
+.foto-sekolah{
+	padding-top: 60px;
+	width: 250px;
+    height: 400px;
+}
+
+.data ul {
+    margin-top:20px;
+    padding:20px;
+    background:lightgrey;
+    border-radius: 10px;
+    margin-right: 100px;
+    border: 5px solid black;
+    list-style-type: none;
+}
+.data h4{
+	margin-left:680px;
+	margin-top: -50px;
+	color: crimson;
+	font-size: 12pt;
+}
+.data ul h2{
+	margin-bottom: 1.2em;
+}
+.data ul li {
+    padding: 0.5em;
+    color:black;
+}
+
+.data ul li span {
+    display:block;
+    font-size:1.4em;
+    margin-bottom:0.5em;
+    color: seagreen;
+}
+.data ul li dd{
+	color:seagreen;
+	margin-left: 50px;
+}
+.data ul li b{
+	color:seagreen;
+}
+.data ul li li{
+	margin-bottom: 5px;
+}
+.data ul li{
+	display: grid;
+	grid-template-columns: 30% 5% auto;
+	
+}
+.updt a{
+	text-decoration: none;
+}
+.update{
+	width: 15%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 25px 30px 40px 400px;
+	background: #009970;
+	border: 1px solid black;
+	outline: none;
+	border-radius: 30px;
+	display: inline-flex;
+	box-shadow: 0 0 5px 0px black;
+
+}.update:hover{
+	color: white;
+}
+
+.valid{
+	width: 15%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 25px 30px 20px 450px;
+	background: mediumblue;
+	border: 1 solid black;
+	outline: none;
+	border-radius: 30px;
+	display: inline-flex;
+	box-shadow: 0 0 5px 0px black;
+}
+.valid:hover{
+	color: white;
+}
+
+/*Halaman Update*/
+.ubah{
+	margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    padding-bottom: 5px;
+    background:transparent;
+}
+

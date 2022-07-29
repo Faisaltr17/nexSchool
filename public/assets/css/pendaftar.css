@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+html {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.halaman-pendaftar{
+	margin-left: 3em;
+	margin-top: 10em;
+}
+.table{
+	margin-top: 500px;
+	margin-bottom: 100px;
+
+}
+
+.directory-or a{
+	text-decoration: none;
+	color: black;
+}
+.directory-or a:hover{
+	color:#009970 ;
+	text-decoration: none;
+}
+
+.directory-or span{
+	color: #009970;
+}
+.table td a{
+	text-align: center;
+	color: darkblue;
+}
+
+.cari:hover{
+	color:white;
+	background: #009970;
+}

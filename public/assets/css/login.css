@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin: 0;
+}
+.bg img {
+  width: 600px;
+}
+
+/*LOGIN*/
+.input-role-siswa {
+  display: grid;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  width: 60%;
+  height: 10%;
+  grid-template-columns: 10% auto;
+}
+.input-role-siswa a img {
+  width: 75px;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: -0.5em;
+  margin-left: -1em;
+}
+h5 p {
+  color: #8692a6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+.regis-role-siswa {
+  width: 426px;
+  height: 108px;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.login-role-siswa {
+  width: 426px;
+  height: 108px;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.login-role-admin {
+  width: 426px;
+  height: 108px;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+.role-logo {
+  width: 100px;
+  align-items: center;
+  padding: 2em;
+  margin-bottom: -0.5em;
+  margin-left: -1em;
+}
+.func {
+  width: 64px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 26px;
+  left: 108px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.role {
+  width: 239px;
+  color: rgba(133, 145, 165, 1);
+  position: absolute;
+  top: 58px;
+  left: 108px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+.login-role-siswa {
+  background: #f5f9ff;
+  border: 1px solid #151c48;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.login-role-admin {
+  background: #f5f9ff;
+  border: 1px solid #151c48;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
